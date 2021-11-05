@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="banner.png" alt="Logo" width="790">
+    <img src="Banner.png" alt="Logo" width="790">
   </a>
   <br/>
   <h1 align="center"><u>Manext</u></h1>
