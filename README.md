@@ -9,10 +9,10 @@
   <p align="center">
     An awesome scaffold to jumpstart your projects using Next and Material!!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/OxyProgrammer/manext"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/OxyProgrammer/manext">View Demo</a>
     ·
     <a href="https://github.com/OxyProgrammer/manext/issues">Report Bug</a>
     ·
