@@ -1,0 +1,52 @@
+{
+  "name": "manext",
+  "version": "1.0.0",
+  "description": "A rich scaffold for Next JS and Material UI",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OxyProgrammer/manext.git"
+  },
+  "keywords": [
+    "nextjs",
+    "material",
+    "ui",
+    "react",
+    "mui"
+  ],
+  "author": "oxyprogrammer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OxyProgrammer/manext/issues"
+  },
+  "homepage": "https://github.com/OxyProgrammer/manext#readme",
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/lab": "latest",
+    "@mui/material": "latest",
+    "@mui/styles": "latest",
+    "clsx": "latest",
+    "dotenv": "latest",
+    "immer": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-typed": "latest",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
