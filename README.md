@@ -55,20 +55,27 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 ## Getting Started
 
-Download/Clone the code. Navigate to the manext directory:
+### Prerequisites (optional)
 
-Do an npm install
+Ensure you have latest stuff with npm.
+npm
+  ```sh
+  npm install npm@latest -g
+  ```
+### Installation
 
-```sh
-npm install npm@latest -g
-```
-
-If everything ran fine, start the development server.
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/OxyProgrammer/manext.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. If everything ran fine, start the development server
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
