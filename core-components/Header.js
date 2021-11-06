@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { makeStyles, useTheme } from '@mui/styles';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Logo from 'page-components/Logo.js';
+
 function ElevationScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -18,13 +19,33 @@ function ElevationScroll(props) {
   });
 }
 
+const useStyles = makeStyles((theme) => ({
+  appBarTransparent: {
+    backgroundColor: 'transparent',
+  },
+  appBarSolid: {
+    backgroundColor: theme.palette.primary.main,
+  },
+}));
+
 const Header = (props) => {
+  const classes = useStyles();
+
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
   return (
     <>
       <ElevationScroll {...props}>
-        <AppBar>
+        <AppBar
+          className={
+            classes[`${trigger ? 'appBarSolid' : 'appBarTransparent'}`]
+          }
+        >
           <Toolbar>
-            <Logo />
+            <Logo isSolid={trigger} />
           </Toolbar>
         </AppBar>
       </ElevationScroll>
