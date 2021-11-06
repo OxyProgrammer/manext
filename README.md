@@ -56,7 +56,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ### Prerequisites (optional)
 
 Ensure you have latest stuff with npm.
-npm
   ```sh
   npm install npm@latest -g
   ```
