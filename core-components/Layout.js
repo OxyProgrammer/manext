@@ -6,7 +6,7 @@ import { makeStyles } from '@mui/styles';
 import { ThemeProvider } from '@mui/material/styles';
 import { darkTheme, lightTheme } from 'core-components/theme';
 
-const createStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     minHeight: '100vh',
@@ -20,7 +20,7 @@ const createStyles = makeStyles((theme) => ({
 }));
 
 const Layout = ({ children }) => {
-  const classes = createStyles();
+  const classes = useStyles();
   return (
     <ThemeProvider
       theme={lightTheme}
