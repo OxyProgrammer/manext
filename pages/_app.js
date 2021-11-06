@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { CacheProvider } from '@emotion/react';
 import { StylesProvider } from '@mui/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import {
   createEmotionCache,
   generateClassName,
@@ -20,9 +21,12 @@ export default function MyApp(props) {
           <title>Manext</title>
           <meta name='viewport' content='initial-scale=1, width=device-width' />
         </Head>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <>
+          <CssBaseline />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </>
       </StylesProvider>
     </CacheProvider>
   );

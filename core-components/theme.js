@@ -1,8 +1,8 @@
 import { createTheme } from '@mui/material/styles';
 import { ThemeType } from './constants';
 
-const manextPrimary = '#0B72B9';
-const manextSecondary = '#FFBA60';
+const manextPrimary = '#007965';
+const manextSecondary = '#F4A442';
 // Create a theme instance.
 const themeOptions = (themeType) => ({
   palette: {

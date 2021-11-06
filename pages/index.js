@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Typography from '@mui/material/Typography';
+import HomeComponent from 'page-components/HomeComponent';
 
 export default function Home() {
   return (
@@ -12,9 +12,7 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Typography variant='h3' color='primary'>
-        Manext
-      </Typography>
+      <HomeComponent />
     </div>
   );
 }
