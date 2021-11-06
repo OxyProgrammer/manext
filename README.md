@@ -28,9 +28,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Material UI, in their documentation gives all you need for [SSR](https://mui.com/guides/server-rendering/). And [here](https://github.com/mui-org/material-ui/tree/HEAD/examples/nextjs) is a sample implementation for Next JS integration with Material UI. The sample implementation is fairly good though you may come across some warnings that is fixed in _Manext_. However, _Manext_ is not only about the integration of MUI and NextJS. It takes the integration one step ahead where a lot of boilerplate and common functionalities are taken care of.
+Material UI, in their documentation gives all you need for [SSR](https://mui.com/guides/server-rendering/). And [here](https://github.com/mui-org/material-ui/tree/HEAD/examples/nextjs) is a sample implementation for Next JS integration with Material UI. The sample implementation is fairly good though you may come across some warnings that is fixed in **_Manext_**. However, **_Manext_** is not only about the integration of MUI and NextJS. It takes the integration one step ahead where a lot of boilerplate and common functionalities are taken care of like _Responsive menus_, Support for _Dark and Light themes_ and _Modal Dialogs_!
 
-_Manext_ takes care that:
+**_Manext_** takes care that:
 * Your time should be focused on creating something you actually want. Jump into the project directory and start writing your first component!
 * You shouldn't be doing the same tasks over and over like Handling Appbar Menu | Side Drawer | Notifications. 
 * You should implement KISS and DRY principles to the rest of your life 😃
@@ -76,3 +76,46 @@ Ensure you have latest stuff with npm.
     yarn dev
     ```
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+_To be updated soon with a demo and documentation._
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [✔️] Integrate MUI with Next JS.
+- [🚧] Create the responsive header with menu for desktop mode and hamburger for mobile.
+- [🚧] Add React Context for App level notifications.
+- [🚧] Support for Dark and Light theme.
+- [🚧] Create the demo and deploy on vercel/ github page.
+
+See the [open issues](https://github.com/OxyProgrammer/manext/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+OxyProgrammer  - oxyprogrammer@gmail.com
+
+Project Link: [https://github.com/OxyProgrammer/manext](https://github.com/OxyProgrammer/manext)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
