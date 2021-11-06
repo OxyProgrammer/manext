@@ -20,6 +20,7 @@ function ElevationScroll(props) {
 }
 
 const useStyles = makeStyles((theme) => ({
+  toolbar: theme.mixins.toolbar,
   appBarTransparent: {
     backgroundColor: 'transparent',
   },
@@ -40,16 +41,13 @@ const Header = (props) => {
     <>
       <ElevationScroll {...props}>
         <AppBar
-          className={
-            classes[`${trigger ? 'appBarSolid' : 'appBarTransparent'}`]
-          }
-        >
+          className={classes[`${trigger ? 'appBarSolid' : 'appBarTransparent'}`]}>
           <Toolbar>
             <Logo isSolid={trigger} />
           </Toolbar>
         </AppBar>
       </ElevationScroll>
-      <Box sx={{ height: '70px' }}></Box>
+      <Box className={classes.toolbar}></Box>
     </>
   );
 };
