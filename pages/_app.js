@@ -6,6 +6,7 @@ import {
   createEmotionCache,
   generateClassName,
 } from '../core-components/style-cache';
+import Layout from 'core-components/Layout';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -19,7 +20,9 @@ export default function MyApp(props) {
           <title>Manext</title>
           <meta name='viewport' content='initial-scale=1, width=device-width' />
         </Head>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </StylesProvider>
     </CacheProvider>
   );
