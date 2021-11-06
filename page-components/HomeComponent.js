@@ -7,7 +7,7 @@ const HomeComponent = () => {
       <Grid item>
         <img
           style={{ width: '100%' }}
-          src='/landing-page.png'
+          src='/landing-page-light.png'
           alt='Manest Landing page picture'
         />
       </Grid>
