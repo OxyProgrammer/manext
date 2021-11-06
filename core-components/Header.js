@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import { makeStyles, useTheme } from '@mui/styles';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-
+import Logo from 'page-components/Logo.js';
 function ElevationScroll(props) {
   const { children, window } = props;
   const trigger = useScrollTrigger({
@@ -24,9 +24,7 @@ const Header = (props) => {
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Typography variant='h4' color='secondary'>
-              Manext
-            </Typography>
+            <Logo />
           </Toolbar>
         </AppBar>
       </ElevationScroll>
