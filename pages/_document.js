@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import * as React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
@@ -16,11 +17,11 @@ export default class MyDocument extends Document {
             href='https://fonts.googleapis.com/css?family=Raleway:100,400,400i,700|Roboto:300,400,500,700&display=swap'
           />
           <meta property='og:type' content='website' />
-          <meta property='og:image' content='https://imgur.com/YgFvi6O.png' />
+          <meta property='og:image' content='https://i.imgur.com/omC2zdA.png' />
           <meta property='og:image:type' content='image/png' />
           <meta property='og:image:width' content='1200' />
           <meta property='og:image:height' content='630' />
-          <meta property='og:image:alt' content='Sid logo' />
+          <meta property='og:image:alt' content='MANEXT logo' />
         </Head>
         <body>
           <Main />
