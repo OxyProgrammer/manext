@@ -8,9 +8,9 @@
   <h1 align="center"><u>Manext</u></h1>
 
   <p align="center">
-    An awesome scaffold to jumpstart your projects using Next and Material!!
+    A scaffold to jumpstart your projects using Next and Material!!
     <br />
-    <a href="https://github.com/OxyProgrammer/manext"><strong>Explore the docs »</strong></a>
+    <a href="https://manext.vercel.app/"><strong>Checkout demo! »</strong></a>
     <br />
     <br />
     <a href="https://github.com/OxyProgrammer/manext/issues">Report Bug</a>
