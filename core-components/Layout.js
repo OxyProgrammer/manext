@@ -4,32 +4,19 @@ import Header from './Header';
 import Box from '@mui/material/Box';
 import { makeStyles } from '@mui/styles';
 import { ThemeProvider } from '@mui/material/styles';
-import { darkTheme, lightTheme } from 'core-components/theme';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    minHeight: '100vh',
-    flexDirection: 'column',
-    alignItems: 'stretch',
-  },
-  flexItemBody: {
-    flexGrow: 1,
-    height: '100%',
-  },
-}));
+import CssBaseline from '@mui/material/CssBaseline';
+import { lightTheme } from 'core-components/theme';
+import styles from 'core-components/Layout.module.css';
 
 const Layout = ({ children }) => {
-  const classes = useStyles();
   return (
-    <ThemeProvider
-      theme={lightTheme}
-    >
-      <Box className={classes.root}>
+    <ThemeProvider theme={lightTheme}>
+      <CssBaseline />
+      <Box className={styles.layoutBody}>
         <Box>
           <Header />
         </Box>
-        <Box className={classes.flexItemBody}>{children}</Box>
+        <Box className={styles.layoutMainContent}>{children}</Box>
         <Box>
           <Footer />
         </Box>

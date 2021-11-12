@@ -1,8 +1,7 @@
 import { cloneElement, useContext } from 'react';
-import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import { makeStyles, useTheme } from '@mui/styles';
+import { makeStyles } from '@mui/styles';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Logo from 'page-components/Logo.js';
 

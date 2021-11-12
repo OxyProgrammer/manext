@@ -1,0 +1,10 @@
+.layoutBody {
+  display: 'flex';
+  min-height: '100vh';
+  flex-direction: 'column';
+  align-items: 'stretch';
+}
+.layoutMainContent {
+  flex-grow: 1;
+  height: '100%';
+}
