@@ -9,6 +9,7 @@ export const ThemeType = {
     addMessage: 'ADD_MESSAGE',
     removeMessage: 'REMOVE_MESSAGE',
   };
+  
   export const MessageType = {
     info: 'info',
     warning: 'warning',

@@ -2,11 +2,9 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { CacheProvider } from '@emotion/react';
 import { StylesProvider } from '@mui/styles';
-import {
-  createEmotionCache,
-  generateClassName,
-} from '../core-components/style-cache';
+import { createEmotionCache, generateClassName } from '../core-components/style-cache';
 import Layout from 'core-components/Layout';
+import { Provider } from 'core-components/app';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -21,10 +19,11 @@ export default function MyApp(props) {
           <meta name='viewport' content='initial-scale=1, width=device-width' />
         </Head>
         <>
-          
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <Provider>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </Provider>
         </>
       </StylesProvider>
     </CacheProvider>

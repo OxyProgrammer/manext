@@ -18,12 +18,12 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     textAlign: 'center',
-    color: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
   },
   punchline: {
     marginTop: '5rem',
     textAlign: 'center',
-    color: theme.palette.primary.main,
+    color: theme.palette.secondary.main,
   },
 }));
 

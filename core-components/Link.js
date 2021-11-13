@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { useRouter } from 'next/router';
@@ -8,21 +9,9 @@ import { styled } from '@mui/material/styles';
 // Add support for the sx prop for consistency with the other branches.
 const Anchor = styled('a')({});
 
-export const NextLinkComposed = React.forwardRef(function NextLinkComposed(
-  props,
-  ref
-) {
-  const {
-    to,
-    linkAs,
-    href,
-    replace,
-    scroll,
-    shallow,
-    prefetch,
-    locale,
-    ...other
-  } = props;
+export const NextLinkComposed = React.forwardRef(function NextLinkComposed(props, ref) {
+  const { to, linkAs, href, replace, scroll, shallow, prefetch, locale, ...other } =
+    props;
 
   return (
     <NextLink
@@ -33,8 +22,7 @@ export const NextLinkComposed = React.forwardRef(function NextLinkComposed(
       scroll={scroll}
       shallow={shallow}
       passHref
-      locale={locale}
-    >
+      locale={locale}>
       <Anchor ref={ref} {...other} />
     </NextLink>
   );
@@ -84,9 +72,7 @@ const Link = React.forwardRef(function Link(props, ref) {
   }
 
   if (noLinkStyle) {
-    return (
-      <NextLinkComposed className={className} ref={ref} to={href} {...other} />
-    );
+    return <NextLinkComposed className={className} ref={ref} to={href} {...other} />;
   }
 
   return (
