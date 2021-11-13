@@ -46,8 +46,7 @@ const Landing = () => {
       <Grid item>
         <Container sx={{ marginTop: '2rem' }}>
         <Typography variant='h4' className={classes.punchline}>
-            Manext <Emoji symbol='⏩' />
-            is the toolkit to get you started promptly <Emoji symbol='🚀' /> on your real
+            Manext <Emoji symbol='⏩' /> is the toolkit to get you started promptly <Emoji symbol='🚀' /> on your real
             work by saving tons of boilerplate. <Emoji symbol='😀' />
           </Typography>
           <Typography>
