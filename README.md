@@ -92,9 +92,9 @@ _To be updated soon with a demo and documentation._
 
 - [✔️] Integrate MUI with Next JS.
 - [🚧] Create the responsive header with menu for desktop mode and hamburger for mobile.
-- [🚧] Add React Context for App level notifications.
-- [🚧] Support for Dark and Light theme.
-- [🚧] Create the demo and deploy on vercel/ github page.
+- [✔️] Add React Context.
+- [✔️] Support for Dark and Light theme.
+- [✔️] Create the demo and deploy on vercel/ github page.
 
 See the [open issues](https://github.com/OxyProgrammer/manext/issues) for a full list of proposed features (and known issues).
 

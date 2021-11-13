@@ -2,10 +2,8 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { makeStyles, useTheme } from '@mui/styles';
-import Logo from 'page-components/Logo';
+import { makeStyles } from '@mui/styles';
 import Emoji from 'core-components/Emoji';
-import { grey } from '@mui/material/colors';
 
 const useStyles = makeStyles((theme) => ({
   landingPage: {
@@ -21,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
   },
   punchline: {
-    marginTop: '5rem',
     textAlign: 'center',
     color: theme.palette.secondary.main,
   },
@@ -34,20 +31,25 @@ const Landing = () => {
     <Grid container direction='column'>
       <Grid item>
         <Box className={classes.landingPage}>
-          <Container>
-            <Typography variant='h1' className={classes.title}>
-              MANEXT
-            </Typography>
-            <Typography variant='h4' className={classes.punchline}>
-              Manext <Emoji symbol='⏩' />
-              is the toolkit to get you started promptly <Emoji symbol='🚀' /> on your
-              real work by saving tons of boilerplate. <Emoji symbol='😀' />
-            </Typography>
-          </Container>
+        <Typography variant='h1' className={classes.title}>
+           MANEXT
+          </Typography>
+          <div sx={{ width: 50, height: 50 }}>
+            <img sx={{ width: '50px' }} src='/question.svg' />
+          </div>
+          <Typography variant='h4' className={classes.title}>
+            Curious?
+          </Typography>
+         
         </Box>
       </Grid>
       <Grid item>
         <Container sx={{ marginTop: '2rem' }}>
+        <Typography variant='h4' className={classes.punchline}>
+            Manext <Emoji symbol='⏩' />
+            is the toolkit to get you started promptly <Emoji symbol='🚀' /> on your real
+            work by saving tons of boilerplate. <Emoji symbol='😀' />
+          </Typography>
           <Typography>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
             ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
