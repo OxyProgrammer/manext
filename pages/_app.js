@@ -4,6 +4,7 @@ import { CacheProvider } from '@emotion/react';
 import { StylesProvider } from '@mui/styles';
 import { createEmotionCache, generateClassName } from '../core-components/style-cache';
 import Layout from 'core-components/Layout';
+import { SnackbarProvider } from 'notistack';
 import { Provider } from 'core-components/app';
 
 const clientSideEmotionCache = createEmotionCache();

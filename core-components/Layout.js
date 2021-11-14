@@ -6,6 +6,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { AppContext } from 'core-components/app';
 import { ThemeType } from 'core-components/constants';
+import { SnackbarProvider } from 'notistack';
+import Zoom from '@mui/material/Zoom';
 import { lightTheme, darkTheme } from 'core-components/theme';
 import styles from 'core-components/Layout.module.css';
 
@@ -18,7 +20,19 @@ const Layout = ({ children }) => {
         <Box>
           <Header />
         </Box>
-        <Box className={styles.layoutMainContent}>{children}</Box>
+
+        <SnackbarProvider
+          maxSnack={5}
+          dense
+          preventDuplicate
+          anchorOrigin={{
+            vertical: 'top',
+            horizontal: 'center',
+          }}
+          TransitionComponent={Zoom}>
+          <Box className={styles.layoutMainContent}>{children}</Box>{' '}
+        </SnackbarProvider>
+
         <Box>
           <Footer />
         </Box>

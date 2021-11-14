@@ -33,6 +33,7 @@
     "dotenv": "latest",
     "immer": "latest",
     "next": "latest",
+    "notistack": "latest",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
