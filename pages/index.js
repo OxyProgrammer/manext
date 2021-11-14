@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Landing from 'page-components/Landing';
+import Notification from 'page-components/Notification';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Landing />
+      <Notification/>
     </div>
   );
 }
