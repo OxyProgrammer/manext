@@ -3,13 +3,6 @@ export const ThemeType = {
     light: 'light',
   };
   
-  export const ActionNames = {
-    toggleTheme: 'TOGGLE_THEME',
-    setSideBarVisibility: 'SET_SIDE_BAR_VISIBILITY',
-    addMessage: 'ADD_MESSAGE',
-    removeMessage: 'REMOVE_MESSAGE',
-  };
-  
   export const MessageType = {
     info: 'info',
     warning: 'warning',

@@ -7,8 +7,8 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import { makeStyles } from '@mui/styles';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Link from 'core-components/Link';
-import { AppContext } from 'core-components/app';
-import { ThemeType, ActionNames } from 'core-components/constants';
+import { ThemeType } from 'core-components/constants';
+import { useToggleTheme } from 'core-components/hooks';
 import Logo from 'page-components/Logo.js';
 
 function ElevationScroll(props) {
@@ -56,18 +56,11 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = (props) => {
   const classes = useStyles();
-  const { state, dispatch } = useContext(AppContext);
-
+  const { theme, toggleTheme } = useToggleTheme();
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 100,
   });
-
-  const onToggleThemeRequested = () => {
-    dispatch({
-      type: ActionNames.toggleTheme,
-    });
-  };
 
   return (
     <>
@@ -84,11 +77,11 @@ const Header = (props) => {
               className={
                 classes[`${trigger ? 'menuButtonSolid' : 'menuButtonTransparent'}`]
               }
-              onClick={onToggleThemeRequested}>
-              {state.theme === ThemeType.dark ? (
-                <LightModeOutlinedIcon/>
+              onClick={toggleTheme}>
+              {theme === ThemeType.dark ? (
+                <LightModeOutlinedIcon />
               ) : (
-                <DarkModeOutlinedIcon/>
+                <DarkModeOutlinedIcon />
               )}
             </Button>
           </Toolbar>
