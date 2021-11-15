@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid';
 import CloseIcon from '@mui/icons-material/Close';
 import Container from '@mui/material/Container';
 import { useSnackbar } from 'notistack';
+import { MessageType } from 'core-components/constants';
 
 const Notification = () => {
   const { enqueueSnackbar, closeSnackbar } = useSnackbar();
@@ -22,7 +23,14 @@ const Notification = () => {
       </IconButton>
     </>
   );
-  const variations = ['info', 'success', 'warning', 'error'];
+
+  const variations = [
+    MessageType.info,
+    MessageType.success,
+    MessageType.warning,
+    MessageType.error,
+  ];
+
   return (
     <Container>
       <Grid container spacing={1} direction='column'>
@@ -40,7 +48,7 @@ const Notification = () => {
                 onClick={(e) => {
                   enqueueSnackbar(`My ${variation} Notification`, {
                     variant: `${variation}`,
-                    autoHideDuration: (_idx % 5) * 1000,
+                    autoHideDuration: ((_idx % 5) + 5) * 1000,
                     action: successAction,
                   });
                 }}>
