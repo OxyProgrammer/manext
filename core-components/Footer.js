@@ -1,10 +1,7 @@
+import FooterContent from 'page-components/FooterContent';
 
 const Footer = () => {
-    return (
-        <div>
-            Footer
-        </div>
-    )
-}
+  return <FooterContent />;
+};
 
-export default Footer
+export default Footer;

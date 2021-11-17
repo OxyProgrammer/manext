@@ -37,6 +37,7 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-share": "latest",
     "react-typed": "latest",
     "uuid": "latest"
   },
