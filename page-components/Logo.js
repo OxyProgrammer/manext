@@ -37,7 +37,6 @@ const Logo = ({ isSolid }) => {
         </Typography>
       )}
       <Avatar
-        className={classes.icon}
         src={`${isSolid ? './partial-logo-solid.svg' : './partial-logo-transparent.svg'}`}
       />
     </Stack>

@@ -2,10 +2,18 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
 import CloseIcon from '@mui/icons-material/Close';
 import Container from '@mui/material/Container';
 import { useSnackbar } from 'notistack';
 import { MessageType } from 'core-components/constants';
+
+const variations = [
+  MessageType.info,
+  MessageType.success,
+  MessageType.warning,
+  MessageType.error,
+];
 
 const Notification = () => {
   const { enqueueSnackbar, closeSnackbar } = useSnackbar();
@@ -24,27 +32,23 @@ const Notification = () => {
     </>
   );
 
-  const variations = [
-    MessageType.info,
-    MessageType.success,
-    MessageType.warning,
-    MessageType.error,
-  ];
-
   return (
     <Container>
-      <Grid container spacing={1} direction='column'>
+      <Grid container spacing={1} direction='column' sx={{ marginTop: '1rem' }}>
         <Grid item>
-          <Typography variant='h2' color='primary'>
-            Notifications
-          </Typography>
+          <Divider variant='fullWidth'>
+            <Typography variant='h3' color='primary' align='center'>
+              Notifications
+            </Typography>
+          </Divider>
         </Grid>
         <Grid item container direction='row' spacing={1}>
           {variations.map((variation, _idx) => (
-            <Grid item key={_idx}>
+            <Grid item key={_idx} sm>
               <Button
                 variant='contained'
                 color={variation}
+                sx={{ minWidth: '100px' }}
                 onClick={(e) => {
                   enqueueSnackbar(`My ${variation} Notification`, {
                     variant: `${variation}`,
@@ -52,7 +56,7 @@ const Notification = () => {
                     action: successAction,
                   });
                 }}>
-                {`${variation} Notification`}
+                {variation}
               </Button>
             </Grid>
           ))}
