@@ -3,7 +3,6 @@ import { makeStyles } from '@mui/styles';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -28,13 +27,13 @@ const useStyles = makeStyles((theme) => ({
   },
   upperFooterFont: {
     fontFamily: 'Raleway',
-    fontSize: '.75rem',
+    fontSize: '1rem',
     color: theme.palette.common.white,
   },
   upperFooterHeaders: {
     fontWeight: 'bold',
     textDecoration: 'underline',
-    fontSize: '1rem',
+    fontSize: '1.5rem',
   },
   lowerFooter: {
     padding: '1rem',

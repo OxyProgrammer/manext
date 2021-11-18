@@ -1,12 +1,13 @@
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
 import CloseIcon from '@mui/icons-material/Close';
 import Container from '@mui/material/Container';
 import { useSnackbar } from 'notistack';
 import { MessageType } from 'core-components/constants';
+import Link from 'core-components/Link';
+import SectionHeader from 'page-components/SectionHeader';
 
 const variations = [
   MessageType.info,
@@ -36,15 +37,24 @@ const Notification = () => {
     <Container>
       <Grid container spacing={1} direction='column' sx={{ marginTop: '1rem' }}>
         <Grid item>
-          <Divider variant='fullWidth'>
-            <Typography variant='h3' color='primary' align='center'>
-              Notifications
-            </Typography>
-          </Divider>
+          <SectionHeader>Notification</SectionHeader>
         </Grid>
-        <Grid item container direction='row' spacing={1}>
+        <Grid item>
+          <Typography variant='body2'>
+            MUI does not give out of box implementation for showing more than 1 snackbar
+            and you will need quite a few lines of code to achieve multiple snackbars.
+            Luckily, <Link to='https://www.npmjs.com/package/notistack'>Notistack</Link>{' '}
+            achieves exactly that. The notifications can be used for un interrupted
+            notification to the user. Checkout the demo at{' '}
+            <Link to='https://iamhosseindhv.com/notistack/demos'>
+              https://iamhosseindhv.com/notistack/demos
+            </Link>{' '}
+            to see what all can be achieved with notistack.
+          </Typography>
+        </Grid>
+        <Grid item container direction='row' justifyContent='center' spacing={1}>
           {variations.map((variation, _idx) => (
-            <Grid item key={_idx} sm>
+            <Grid item key={_idx}>
               <Button
                 variant='contained'
                 color={variation}
