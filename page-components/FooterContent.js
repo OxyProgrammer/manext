@@ -100,7 +100,7 @@ const FooterContent = () => {
             <Link to='https://github.com/OxyProgrammer/manext'>
               <Stack direction='row' spacing={0.4}>
                 <GitHubIcon fontSize='small' sx={{ color: '#FFFFFF' }} />
-                <Typography className={classes.upperFooterFont} nogutter>
+                <Typography className={classes.upperFooterFont} nogutter='true'>
                   Repository
                 </Typography>
               </Stack>
@@ -110,7 +110,7 @@ const FooterContent = () => {
             <Link to='https://github.com/OxyProgrammer/manext'>
               <Stack direction='row' spacing={0.4}>
                 <MenuBookIcon fontSize='small' sx={{ color: '#FFFFFF' }} />
-                <Typography className={classes.upperFooterFont} nogutter>
+                <Typography className={classes.upperFooterFont} nogutter='true'>
                   Documentation
                 </Typography>
               </Stack>

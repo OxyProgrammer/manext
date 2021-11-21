@@ -34,10 +34,10 @@ const Notification = () => {
   );
 
   return (
-    <Container>
+    <Container id="notifications">
       <Grid container spacing={1} direction='column' sx={{ marginTop: '1rem' }}>
         <Grid item>
-          <SectionHeader>Notification</SectionHeader>
+          <SectionHeader>Notifications</SectionHeader>
         </Grid>
         <Grid item>
           <Typography variant='body2'>
