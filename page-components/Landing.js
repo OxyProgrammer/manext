@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: 'center',
     color: theme.palette.secondary.main,
+    marginTop: '3rem',
   },
   punchline: {
     textAlign: 'center',
@@ -49,9 +50,10 @@ const Landing = () => {
       </Grid>
       <Grid item>
         <Container sx={{ marginTop: '2rem' }}>
-        <Typography variant='h4' className={classes.punchline}>
-            Manext <Emoji symbol='⏩' /> is the toolkit to get you started promptly <Emoji symbol='🚀' /> on your real
-            work by saving tons of boilerplate. <Emoji symbol='😀' />
+          <Typography variant='h4' className={classes.punchline}>
+            Manext <Emoji symbol='⏩' /> is the toolkit to get you started promptly{' '}
+            <Emoji symbol='🚀' /> on your real work by saving tons of boilerplate.{' '}
+            <Emoji symbol='😀' />
           </Typography>
         </Container>
       </Grid>

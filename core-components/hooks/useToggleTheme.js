@@ -3,7 +3,7 @@ import { AppContext } from 'core-components/app';
 
 function useToggleTheme() {
   const { appTheme, toggleAppTheme } = useContext(AppContext);
-  return { theme: appTheme, toggleTheme:toggleAppTheme };
+  return { appTheme: appTheme, toggleTheme:toggleAppTheme };
 }
 
 export default useToggleTheme;

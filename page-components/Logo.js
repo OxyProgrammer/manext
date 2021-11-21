@@ -22,14 +22,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Logo = ({ isSolid }) => {
+const Logo = ({ isSolid, adjustContentOnResize }) => {
   const classes = useStyles();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Stack direction='row'>
-      {matches ? null : (
+      {matches && adjustContentOnResize ? null : (
         <Typography
           variant='h4'
           className={classes[`${isSolid ? 'brandStyleSolid' : 'brandStyleTransparent'}`]}>

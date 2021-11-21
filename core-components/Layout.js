@@ -1,5 +1,3 @@
-import Footer from './Footer';
-import Header from './Header';
 import Box from '@mui/material/Box';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -8,16 +6,28 @@ import { SnackbarProvider } from 'notistack';
 import Zoom from '@mui/material/Zoom';
 import { lightTheme, darkTheme } from 'core-components/theme';
 import styles from 'core-components/Layout.module.css';
-import { useToggleTheme } from 'core-components/hooks';
+import { useToggleTheme, useHamburger } from 'core-components/hooks';
+import Footer from './Footer';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import menuConfiguration from 'page-components/menuConfiguration';
 
 const Layout = ({ children }) => {
-  const { theme } = useToggleTheme();
+  const { appTheme } = useToggleTheme();
+  const { hamburgerVisible, showHamburger } = useHamburger();
+
   return (
-    <ThemeProvider theme={theme === ThemeType.dark ? darkTheme : lightTheme}>
+    <ThemeProvider theme={appTheme === ThemeType.dark ? darkTheme : lightTheme}>
       <CssBaseline />
+      <Sidebar
+        open={hamburgerVisible}
+        onCloseRequested={() => showHamburger(false)}
+        onOpenRequested={() => showHamburger(true)}
+        menuConfiguration={menuConfiguration}
+      />
       <Box className={styles.layoutBody}>
         <Box>
-          <Header />
+          <Header menuConfiguration={menuConfiguration} />
         </Box>
 
         <SnackbarProvider
