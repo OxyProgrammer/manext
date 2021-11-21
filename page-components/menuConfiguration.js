@@ -4,8 +4,8 @@ const menuConfiguration = [
     link: '/#notifications',
   },
   {
-    label: 'MODAL',
-    link: '/#modal',
+    label: 'MODALS',
+    link: '/#modals',
   },
 ];
 
