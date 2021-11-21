@@ -4,7 +4,7 @@ import SectionHeader from 'page-components/SectionHeader';
 
 const Modals = () => {
   return (
-    <Container  id="modals">
+    <Container id='modals'>
       <Grid container spacing={1} direction='column' sx={{ marginTop: '1rem' }}>
         <Grid item>
           <SectionHeader>Modals</SectionHeader>
