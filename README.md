@@ -42,11 +42,13 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Manext is built using 👇 
 
 - [Next.js](https://nextjs.org/)
 - [React.js](https://reactjs.org/)
 - [MUI](https://mui.com/)
+
+It is expected you are well versed with latest React features like hooks and context api.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -81,8 +83,10 @@ npm install npm@latest -g
 <!-- USAGE EXAMPLES -->
 
 ## Usage
+ Here is a demo of Manext showcasing the bare minimum that can be achieved with it 👉
+ [there you go](https://manext.vercel.app/) 
 
-_To be updated soon with a demo and documentation._
+_Documentation to be provided, if time permits._
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -91,7 +95,8 @@ _To be updated soon with a demo and documentation._
 ## Roadmap
 
 - [✔️] Integrate MUI with Next JS.
-- [🚧] Create the responsive header with menu for desktop mode and hamburger for mobile.
+- [✔️] Create the responsive header with menu for desktop mode and hamburger for mobile.
+- [🚧] Add Modal hook.
 - [✔️] Add React Context.
 - [✔️] Support for Dark and Light theme.
 - [✔️] Create the demo and deploy on vercel/ github page.
