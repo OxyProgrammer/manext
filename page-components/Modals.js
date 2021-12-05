@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import SectionHeader from 'page-components/SectionHeader';
 import Typography from '@mui/material/Typography';
-import useModal from 'core-components/hooks';
+import { useModal } from 'core-components/hooks';
 
 const Modals = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -18,7 +18,13 @@ const Modals = () => {
     </Typography>
   );
 
-  const modalStuff = useModal(modalOpen, closeModal, 'Sample Title', content);
+  const actions = (
+    <Button autoFocus onClick={closeModal}>
+      Save changes
+    </Button>
+  );
+
+  const modalStuff = useModal(modalOpen, closeModal, 'Sample Title', content, actions);
 
   return (
     <>
