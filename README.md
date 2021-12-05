@@ -42,7 +42,7 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 ### Built With
 
-Manext is built using 👇 
+Manext is built using 👇
 
 - [Next.js](https://nextjs.org/)
 - [React.js](https://reactjs.org/)
@@ -83,10 +83,51 @@ npm install npm@latest -g
 <!-- USAGE EXAMPLES -->
 
 ## Usage
- Here is a demo of Manext showcasing the bare minimum that can be achieved with it 👉
- [there you go](https://manext.vercel.app/) 
 
-_Documentation to be provided, if time permits._
+Here is a demo of Manext showcasing the bare minimum that can be achieved with it 👉
+[there you go](https://manext.vercel.app/).
+
+Showing Modals is as simple as using the hook 👉 _useModal_ and passing in the _content_ and _actions_.
+This gives you entire control on your _Dialog's_ behavior, albeit keeping the logic of showing the dialog wrapped up in the _useModal_ hook!
+
+```javascript
+import { useState } from 'react';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { useModal } from 'core-components/hooks';
+
+const Modals = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const closeModal = () => setModalOpen(false);
+
+  const content = (
+    <Typography gutterBottom>
+      Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+      scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non
+      metus auctor fringilla.
+    </Typography>
+  );
+
+  const actions = (
+    <Button autoFocus onClick={closeModal}>
+      Save changes
+    </Button>
+  );
+
+  const modalStuff = useModal(modalOpen, closeModal, 'Sample Title', content, actions);
+
+  return (
+    <>
+      {modalStuff}
+      <Button color='primary' variant='contained' onClick={() => setModalOpen(true)}>
+        Launch Modal
+      </Button>
+    </>
+  );
+};
+
+export default Modals;
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -96,10 +137,11 @@ _Documentation to be provided, if time permits._
 
 - [✔️] Integrate MUI with Next JS.
 - [✔️] Create the responsive header with menu for desktop mode and hamburger for mobile.
-- [🚧] Add Modal hook.
+- [✔️] Add Modal hook.
 - [✔️] Add React Context.
 - [✔️] Support for Dark and Light theme.
 - [✔️] Create the demo and deploy on vercel/ github page.
+- [🚧] Add Modal hook.
 
 See the [open issues](https://github.com/OxyProgrammer/manext/issues) for a full list of proposed features (and known issues).
 
